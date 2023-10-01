@@ -34,6 +34,13 @@
         document.querySelector("#h11").style.color="red";
     });
 
+    document.querySelector("#btn2").addEventListener("click", function(){
+        document.querySelector("#img").style.background = 'url('+document.querySelector("#url").value+')';
+        document.querySelector("#img").style.backgroundPosition  = 'center';
+        document.querySelector("#img").style.backgroundSize  = 'cover';
+
+    });
+
     //Case One
     //Bind an event for Change Text Btn
     //Get Input Text Value
