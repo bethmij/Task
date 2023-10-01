@@ -35,9 +35,12 @@
     });
 
     document.querySelector("#btn2").addEventListener("click", function(){
-        document.querySelector("#img").style.background = 'url('+document.querySelector("#url").value+')';
-        document.querySelector("#img").style.backgroundPosition  = 'center';
-        document.querySelector("#img").style.backgroundSize  = 'cover';
+        var url = document.querySelector("#url").value;
+        var container = document.querySelector("#img");
+        container.style.background = `url(${url})`;
+        container.style.backgroundPosition  = 'center';
+        container.style.backgroundSize  = 'contain';
+        container.style.backgroundRepeat  = 'no-repeat';
 
     });
 
